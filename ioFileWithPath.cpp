@@ -14,7 +14,7 @@ int main()
     // membuka File dalam mode menulis
     ofstream outfile;
     //menunjuk ke sebuah nama file
-    outfile.open(NamaFile + ".txt"), ios::out;
+    outfile.open(NamaFile + ".txt", ios::out);
     cout << ">=menulis file, \'q\' untuk keluar" << endl;
     //unlimited loop untuk menulis
     while (true)
@@ -29,4 +29,8 @@ int main()
     }
     // selesai dalam menulis sekarang tutup file nya
     outfile.close();
+    // operasi file dalam mode membaca
+    ifstream infile;
+    // menunjuk ke sebuah file untuk membuka
+    infile.open(NamaFile + ".txt", ios::in);
 }
