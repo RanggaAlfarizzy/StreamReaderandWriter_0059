@@ -17,7 +17,9 @@ int main() {
         cout << "_ ";
         // mendapatkan setiap karakter dalam satu garis
         getline(cin, baris);
-
+        // loop akan berhenti jika anda masukkan karakter q
+        if (baris == "q")
+            break;
     }
 
 
